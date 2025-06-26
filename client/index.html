@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN in <head> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">Abhishek <span>Jain</span></a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="mobile-contact-btn">Contact Me</a>
+    </nav>
+    <button class="gradient-btn">Contact Me</button>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h1>Hi ,It's <span>Abhishek</span></h1>
+      <h3>I'm a <span>Web Developer</span></h3>
+      <p>Turning ideas into interactive, responsive, and modern websites.</p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/jainshab_1803"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/abhishek-jain-27430b339/"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/Abhishek18jain"><i class='bx bxl-github'></i></a>
+      </div>
+      <div class="btn-group">
+        <a href="https://wa.me/918717821501?text=Hi%20Abhishek,%20I'm%20interested%20in%20working%20with%20you!"
+          target="_blank" class="btn">Hire</a>
+        <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+    <div class="home-img">
+      <div class="zoomed-image">
+        <img src="/client/3f715f65-c0f4-4bc2-965a-551b1336d9b0.png" alt="Abhishek Jain">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-img">
+      <div class="zoomed-image">
+        <img src="/client/3f715f65-c0f4-4bc2-965a-551b1336d9b0.png" alt="Abhishek Jain">
+      </div>
+    </div>
+    <div class="about-content">
+      <h2>About <span>Me</span></h2>
+      <p>I'm a passionate Web Developer who builds modern, responsive, and user-friendly websites.
+        I specialize in creating fast, scalable web apps using the MERN stack and cutting-edge tools.</p>
+      <button class="btn-about">Read More</button>
+    </div>
+  </section>
+  <!-- ===== Modal Popup ===== -->
+  <div id="aboutModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>ABOUT ME</h2>
+      <p>
+        I help business owners and busy web developers to design & develop creative websites
+        that fit their vision and attract the visitors to stay forever. Technologies and tools that I use:
+      </p>
+      <div class="tags">
+        <span>#javascript</span> <span>#react.js</span> <span>#node.js</span>
+        <span>#express.js</span> <span>#mongoDB</span> <span>#mongoose</span>
+        <span>#cloudinary</span> <span>#ejs</span> <span>#html</span> <span>#css</span> <span>#git</span>
+        <span>#github</span>
+        <span>#terminal</span>
+      </div>
+      <h3>MERN STACK</h3>
+      <div class="mern-stack">
+        <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="MongoDB">
+        <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="Express">
+        <img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React">
+        <img src="https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" alt="Node">
+      </div>
+    </div>
+  </div>
+
+  <section class="services" id="services">
+    <h2 class="heading">Services</h2>
+    <div class="services-container">
+      <div class="service-box">
+        <div class="service-info">
+         <i class="fas fa-laptop-code"></i>
+          <h4>Custom Website Development</h4>
+          <p> Build fully tailored, high-performance websites from the ground up — fast, functional, scalable, and truly
+            unique to your vision.</p>
+        </div>
+      </div>
+     <div class="service-box">
+  <div class="service-info">
+    <i class="fas fa-layer-group"></i>
+    <h4>Full Stack Web Development</h4>
+    <p>End-to-end web application development using modern frontend and backend technologies — from responsive UI to secure, scalable servers.</p>
+  </div>
+</div>
+
+    <div class="service-box">
+      <div class="service-info">
+        <i class="fas fa-lock"></i>
+        <h4>Authentication & Security Integration</h4>
+        <p>Secure user authentication systems using JWT, bcrypt, sessions, and more — including login, signup, password
+          encryption, and access control.</p>
+      </div>
+    </div>
+    
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2 class="heading">Projects</h2>
+    <div class="projects-box">
+      <div class="project-card">
+         <i class="fas fa-laptop-code"></i>
+             <h3>Sant Sudhasagar Gaushala, Sironj</h3>
+          <p>A modern website built to support Gaushala donations, cow adoption, volunteer management, and blog sections. Clean UI with responsive design and spiritual theme.</p>
+          <a href="https://gaushalasironj.onrender.com/" target="_blank">🔗 Live Preview</a>
+      </div>
+      <div class="project-card">
+        <i class="fas fa-face-smile-beam"></i>
+       <h3>Mood Journal Web App</h3>
+        <p>A personal journaling web app where users can track mood, get motivational quotes, write daily reflections, and set tomorrow’s goals. Built with vanilla JS, local backend & modern UI.</p>
+        <a href="https://jazzy-sfogliatella-b6d221.netlify.app/" target="_blank">🔗 Live Preview</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <form action="https://formsubmit.co/abhijain182005@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <div class="input-group">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-box">
+          <input type="number" name="phone" placeholder="Phone Number">
+          <input type="text" name="subject" placeholder="Subject">
+        </div>
+      </div>
+      <div class="input-group-2">
+        <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" class="btn">
+      </div>
+    </form>
+  </section>
+  
+  <footer>
+    <p>Abhishek Jain © 2025</p>
+  
+ <div class="social-icons">
+        <a href="https://www.instagram.com/jainshab_1803"><i class='bx bxl-instagram'></i></a>
+        <a href="https://www.linkedin.com/in/abhishek-jain-27430b339/"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/Abhishek18jain"><i class='bx bxl-github'></i></a>
+      </div>
+      </footer>
+  <script>
+    const modal = document.getElementById("aboutModal");
+    const btn = document.querySelector(".btn-about");
+    const span = document.querySelector(".close");
+
+    btn.onclick = function () {
+      modal.style.display = "flex";
+    }
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+  const menuIcon = document.getElementById('menu-icon');
+  const navbar = document.querySelector('.navbar');
+
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.toggle('active');
+    menuIcon.classList.toggle('bx-x');
+  });
+
+  // Optional: Close menu on scroll or link click (good UX)
+  window.addEventListener('scroll', () => {
+    navbar.classList.remove('active');
+    menuIcon.classList.remove('bx-x');
+  });
+
+  document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', () => {
+      navbar.classList.remove('active');
+      menuIcon.classList.remove('bx-x');
+    });
+  });
+</script>
+
+</body>
+
+</html>
