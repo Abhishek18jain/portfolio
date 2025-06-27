@@ -565,6 +565,22 @@ footer{
 .mobile-contact-btn {
   display: none;
 }
+/* ===== Scroll Animations ===== */
+.hide-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.9s ease;
+}
+
+.show-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Generic smooth transitions for links and buttons */
+a, .btn, .gradient-btn, .service-box, .project-card {
+  transition: all 0.3s ease;
+}
+
 /* For tablets and smaller devices (768px and below) */
 @media (max-width: 768px) {
   html {
@@ -597,6 +613,7 @@ footer{
   }
   #menu-icon{
     display: block;
+    padding-right: 1.8rem;
   }
 
   .header {
@@ -654,6 +671,7 @@ footer{
   .about {
     flex-direction: column-reverse;
     text-align: center;
+    padding: 5rem 15%;
   }
 
   .about-img img,
@@ -760,7 +778,7 @@ footer{
 
   /* Optional: reduce padding for better mobile view */
   section {
-    padding: 2rem 15%;
+    padding: 3.5rem 15%;
   }
   .home-content{
     flex: 0 0 0;
@@ -771,4 +789,17 @@ footer{
 .about-img{
   flex: auto;
 }
+.modal-content .close {
+    position: absolute;
+    font-size: 4rem;
+    color: white;
+    cursor: pointer;
+    top: 3rem;
+    right: 0;
 }
+.modal-content h2 {
+    color: #00bcd4;
+    margin-top: 1rem;
+    margin-bottom: 1rem;}
+}
+
